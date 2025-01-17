@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">RenatoCouto_Atividade_EAD</string>
+    <string name="titulo_toolbar">Disciplinas</string>
+    <string name="disciplina">Disciplina</string>
+    <string name="menu_cadastrar">Cadastrar</string>
+    <string name="menu_listar">Listar</string>
+    <string name="menu_sair">Sair</string>
+    <string name="mensagem_cadastro">Cadastro iniciado</string>
+    <string name="descricao_botao_menu">Botão do menu</string>
+    <string name="descricao_botao_sair">Botão de sair</string>
+    <string name="nome_obrigatorio">Nome é obrigatório</string>
+    <string name="nota_obrigatoria">Nota é obrigatória</string>
+    <string name="nota_invalida">Nota inválida</string>
+    <string name="disciplina_gravada_com_sucesso">Disciplina gravada com sucesso!</string>
+    <string name="houve_um_erro_ao_gravar_a_disciplina">houve um erro ao gravar a disciplina</string>
+    <string name="erro_ao_recuperar_a_lista_de_disciplinas">Erro ao recuperar a lista de disciplinas</string>
+    <string name="acoes">Ações</string>
+    <string name="erro_ao_excluir">Erro ao Excluir</string>
+    <string name="disciplina_excluida_com_sucesso">Disciplina excluída com sucesso!</string>
+    <string name="confirmar_exclusao">Confirmar Exclusão</string>
+    <string name="realmente_deseja_deletar">"Você realmente deseja deletar "</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="deletar">deletar</string>
+    <string name="nome_da_disciplina">Nome da Disciplina</string>
+    <string name="nota_obtida">Nota Obtida</string>
+    <string name="salvar">Salvar</string>
+    <string name="home">Home</string>
+    <string name="descricao_btn_home">Volar para pagína principal</string>
+    <string name="cadastrar_disciplinas">Cadastrar disciplinas</string>
+    <string name="lista_de_disciplinas">Lista de Disciplinas</string>
+    <string name="nota_maxima">Nota máxima é 10!</string>
+    <string name="sistema_disciplinas">Sistema de Disciplinas</string>
+    <string name="carregando">Carregando...</string>
+    <string name="nome_invalido">Nome inválido</string>
+    <string name="max_40_caracteres">Máx. 40 caracteres.</string>
+    <string name="nota_negativa">Erro: Valor negativa!</string>
+    <string name="editar_disciplina">Editar disciplina</string>
+
+
+</resources>

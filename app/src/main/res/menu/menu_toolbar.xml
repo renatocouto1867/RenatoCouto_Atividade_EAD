@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_cadastrar"
+        android:icon="@drawable/ic_criar"
+        android:title="@string/menu_cadastrar" />
+    <item
+        android:id="@+id/menu_listar"
+        android:icon="@drawable/ic_lista"
+        android:title="@string/menu_listar" />
+</menu>

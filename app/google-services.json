@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037405709522",
+    "project_id": "atividadeead2",
+    "storage_bucket": "atividadeead2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037405709522:android:5c0072b59a2ffb7ebe790b",
+        "android_client_info": {
+          "package_name": "com.example.renatocouto_atividade_ead"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDaTgBwoJudp9HWtRlL62jEHslkRYczSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
