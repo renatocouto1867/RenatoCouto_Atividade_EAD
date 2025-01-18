@@ -2,13 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/LayoutNomeDisciplina"
@@ -43,14 +41,44 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonSalvar"
+            android:id="@+id/button_limpar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_cancelar"
+            android:layout_marginEnd="8dp"
+            android:text="@string/limpar"
+            app:cornerRadius="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_cancelar"
+            android:layout_marginEnd="8dp"
+            android:text="@string/cancelar"
+            app:cornerRadius="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_salvar"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
             android:text="@string/salvar"
             app:cornerRadius="8dp" />
 
+
     </LinearLayout>
+
+
 
 </LinearLayout>

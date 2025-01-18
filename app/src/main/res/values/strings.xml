@@ -18,7 +18,7 @@
     <string name="erro_ao_excluir">Erro ao Excluir</string>
     <string name="disciplina_excluida_com_sucesso">Disciplina excluída com sucesso!</string>
     <string name="confirmar_exclusao">Confirmar Exclusão</string>
-    <string name="realmente_deseja_deletar">"Você realmente deseja deletar "</string>
+    <string name="realmente_deseja_deletar">"Você realmente deseja deletar a disciplina: "</string>
     <string name="cancelar">Cancelar</string>
     <string name="deletar">deletar</string>
     <string name="nome_da_disciplina">Nome da Disciplina</string>
@@ -35,6 +35,8 @@
     <string name="max_40_caracteres">Máx. 40 caracteres.</string>
     <string name="nota_negativa">Erro: Valor negativa!</string>
     <string name="editar_disciplina">Editar disciplina</string>
-
+    <string name="limpar">Limpar</string>
+    <string name="nota">Nota</string>
+    <string name="excluir_disciplina">Excluir disciplina</string>
 
 </resources>

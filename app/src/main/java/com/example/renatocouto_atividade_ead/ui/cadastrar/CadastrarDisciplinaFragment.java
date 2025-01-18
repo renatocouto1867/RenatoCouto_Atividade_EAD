@@ -35,20 +35,22 @@ public class CadastrarDisciplinaFragment extends Fragment {
             binding.editNotaObtida.setText(String.valueOf(disciplina.getNotaObtida()));
             textTitulo = getActivity().findViewById(R.id.txt_titulo_toolbar);
             textTitulo.setText(R.string.editar_disciplina);
+            binding.buttonLimpar.setVisibility(View.GONE);
 
-        } else disciplina = new Disciplina();
+        } else {
+            disciplina = new Disciplina();
+            binding.buttonCancelar.setVisibility(View.GONE);
+        }
 
         binding.buttonSalvar.setOnClickListener(v -> salvarDisciplina(disciplina));
+        binding.buttonCancelar.setOnClickListener(view -> cancelarEdicao());
+        binding.buttonLimpar.setOnClickListener(view -> limparFormulario());
 
         viewModel.getMsResult().observe(getViewLifecycleOwner(), msResult -> {
             if (msResult.equals("sucesso")) {
                 Mensagens.showSucesso(requireView(), getString(R.string.disciplina_gravada_com_sucesso));
 
-                ListarDisciplinasFragment listarDisciplinasFragment = new ListarDisciplinasFragment();
-                requireActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container, listarDisciplinasFragment)
-                        .addToBackStack(null)
-                        .commit();
+                abrirFragmentLista();
             }
             if (msResult.equals("Erro")) {
 
@@ -58,6 +60,20 @@ public class CadastrarDisciplinaFragment extends Fragment {
 
         return root;
     }
+
+    private void abrirFragmentLista() {
+        ListarDisciplinasFragment listarDisciplinasFragment = new ListarDisciplinasFragment();
+        requireActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, listarDisciplinasFragment)
+                .addToBackStack(null)
+                .commit();
+    }
+
+    private void cancelarEdicao() {
+        abrirFragmentLista();
+    }
+
+
 // codigo significa
 // -1	okay
 // -2	nome vazio

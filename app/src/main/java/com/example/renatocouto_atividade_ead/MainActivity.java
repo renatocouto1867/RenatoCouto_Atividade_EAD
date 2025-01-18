@@ -1,5 +1,6 @@
 package com.example.renatocouto_atividade_ead;
 
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageButton;
@@ -30,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
         inicializarViews();
         configurarCliques();
+
+        //https://developer.android.com/reference/com/google/android/material/navigation/NavigationBarView#setItemActiveIndicatorColor(android.content.res.ColorStateList)
+        //muda a cor da seleção dos icones na barra de navegação
+        //public void setItemActiveIndicatorColor (ColorStateList csl)
+        bottomNavigationView.setItemActiveIndicatorColor(ColorStateList.valueOf(getColor(R.color.gray_400)));
     }
 
     private void inicializarViews() {
@@ -37,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         botaoSair = findViewById(R.id.btn_sair);
         bottomNavigationView = findViewById(R.id.nav_view);
         textTitulo = findViewById(R.id.txt_titulo_toolbar);
+
     }
 
     private void configurarCliques() {

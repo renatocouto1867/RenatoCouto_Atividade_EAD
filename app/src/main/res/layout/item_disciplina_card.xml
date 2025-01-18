@@ -14,10 +14,10 @@
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
-        <!-- rotulos -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:baselineAligned="false"
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -26,7 +26,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:text="@string/disciplina" />
+                android:text="@string/disciplina"
+                android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 style="@style/RotuloDisciplinas"
@@ -34,8 +35,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Nota" />
-
+                android:text="@string/nota"
+                android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 style="@style/RotuloDisciplinas"
@@ -43,8 +44,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/acoes" />
-
+                android:text="@string/acoes"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- conteudo -->
@@ -59,7 +60,7 @@
                 android:id="@+id/tv_disciplina"
                 style="@style/RotuloDisciplinas"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center"
                 tools:text="Fisica" />
@@ -68,7 +69,7 @@
                 android:id="@+id/tv_nota"
                 style="@style/RotuloDisciplinas"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
                 tools:text="5" />
@@ -82,20 +83,24 @@
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/btn_edit_Disciplina"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="4dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/editar_disciplina"
+                    android:padding="4dp"
                     android:src="@drawable/ic_edit" />
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/btn_delete_Disciplina"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="4dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/excluir_disciplina"
+                    android:padding="4dp"
                     android:src="@drawable/ic_delete" />
-
             </LinearLayout>
-
 
         </LinearLayout>
     </LinearLayout>
